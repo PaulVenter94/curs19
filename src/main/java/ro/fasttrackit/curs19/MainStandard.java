@@ -10,7 +10,8 @@ public class MainStandard {
         arrOperation(elem -> elem + " hello");
         filterOperation(elem -> elem % 2 == 0);
         filterOperation(elem -> elem % 2 != 0);
-        consumer(elem-> System.out.println(elem));
+        consumer(elem -> System.out.println(elem));
+        consumer(elem -> System.out.println("$" + elem));
     }
 
     public static void consumer(Consumer<Integer> consumer) {
